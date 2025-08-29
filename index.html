@@ -15,10 +15,19 @@
                 <input type="text" placeholder="CPF" name="cpf" class="cpf">
                 <input type="date" name="data_nascimento" class="data_nascimento">
             </div>
-            <input type="radio" name="opcao">
-            <input type="checkbox" name="termos">
-            <input type="checkbox" name="termos-2">
-            <input type="submit" value="Enviar">
+            <div class="form-grupo-radio">
+                <input type="radio" name="opcao">
+                <p class="form-grupo-radio-texto">Opção 1</p>
+            </div>
+            <div class="form-grupo-checkbox">
+                <input type="checkbox" name="termos">
+                <p class="form-grupo-checkbox-texto">Concordo com os termos!</p>
+            </div>
+            <div class="form-grupo-checkbox">
+                <input type="checkbox" name="termos-2">
+                <p class="form-grupo-checkbox-texto">Receber email com novidades!</p>
+            </div>
+            <input type="submit" value="Enviar" class="btn-enviar">
         </form>
     </section>
 </body>
