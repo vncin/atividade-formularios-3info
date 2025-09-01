@@ -30,6 +30,12 @@ body{
 }
 .cpf, .data_nascimento{
     width: 50%;
+    outline: 0;
+}
+select{
+    width: 48%;
+    height: 5vh;
+    outline: 0;
 }
 input[type='text']{
     height: 5vh;
@@ -39,7 +45,7 @@ input[type='text']{
     font-size: 16px;
     color: #333;
 }
-input[type="text"]:focus{
+input[type="text"]:focus, select:focus, input[type="date"]:focus{
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -58,7 +64,6 @@ input[type="text"]:focus{
     background-color: rgb(100, 236, 100);
     font-weight: bolder;
     color: white;
-
 }
 
 @media screen and (max-width: 435px) {
@@ -75,6 +80,9 @@ input[type="text"]:focus{
     }
     .cpf, .data_nascimento{
         width: 99%;
+    }
+    select{
+        width: 100%;
     }
     .data_nascimento{
         margin-top: 10%;
